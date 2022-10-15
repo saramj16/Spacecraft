@@ -1,0 +1,214 @@
+RESOURCES 12
+
+RESOURCE mesh
+NAME x3_fighter
+PATH data/assets/x3_fighter.ASE
+
+RESOURCE mesh
+NAME sky
+PATH data/assets/sphere.ASE
+
+RESOURCE mesh
+NAME station
+PATH data/assets/eve_station.ASE
+
+RESOURCE mesh
+NAME x3_interceptor
+PATH data/assets/x3_interceptor.ASE
+
+RESOURCE texture
+NAME x3_fighter
+PATH data/assets/x3_fighter.tga
+
+RESOURCE texture
+NAME station
+PATH data/assets/eve1.tga
+
+RESOURCE texture
+NAME x3_interceptor
+PATH data/assets/x3_interceptor.tga
+
+RESOURCE texture
+NAME sky
+PATH data/assets/milkyway.tga
+
+RESOURCE shader
+NAME phong
+PATH data/shaders/phong_tex.vert data/shaders/phong_tex.frag
+
+RESOURCE shader
+NAME environment
+PATH data/shaders/sky.vert data/shaders/sky.frag
+
+RESOURCE mesh
+NAME hunter
+PATH data/assets/hunter.ASE
+
+RESOURCE texture
+NAME hunter
+PATH data/assets/hunter.tga
+
+
+OBJECTS 11
+
+
+
+OBJECT GameObjectPlayer 
+NAME x3_interceptor
+MESH x3_interceptor
+SHADER phong
+TEXTURE x3_interceptor
+POSITION 0.0 0.0 0.0
+ROTATION 0.0 0.0 0.0
+SCALE 2.0 2.0 2.0
+
+
+						
+
+OBJECT GameObjectEnemy 
+NAME x3_fighter
+MESH x3_fighter
+SHADER phong
+TEXTURE x3_fighter
+POSITION 275.0 0.0 0.0
+ROTATION 0.0 0.0 0.0
+SCALE 2.0 2.0 2.0
+WAYPOINTS 3		
+	275.0 0.0 0.0	
+	0.0 275.0 0.0 	  
+	0.0 0.0 275.0
+MOVIMENT 3
+
+OBJECT GameObjectEnemy 
+NAME x3_fighter
+MESH x3_fighter
+SHADER phong
+TEXTURE x3_fighter
+POSITION 300.0 0.0 0.0
+ROTATION 0.0 0.0 0.0
+SCALE 2.0 2.0 2.0
+WAYPOINTS 3		
+	300.0 0.0 0.0 	
+	0.0 300.0 0.0   
+	0.0 0.0 300.0 
+MOVIMENT 3
+
+OBJECT GameObjectEnemy 
+NAME x3_fighter
+MESH x3_fighter
+SHADER phong
+TEXTURE x3_fighter
+POSITION 325.0 0.0 0.0 
+ROTATION 0.0 0.0 0.0
+SCALE 2.0 2.0 2.0
+WAYPOINTS 3		
+	325.0 0.0 0.0 	
+	0.0 325.0 0.0 	  
+	0.0 0.0 325.0 
+MOVIMENT 3
+
+
+
+
+OBJECT GameObjectEnemy 
+NAME station
+MESH station
+SHADER phong
+TEXTURE station
+POSITION -3000.0 3500.0 1500.0
+ROTATION 0.0 0.0 0.0
+SCALE 0.5 0.5 0.5
+WAYPOINTS 3		
+	50.0 0.0 0.0 	
+	100.0 0.0 0.0 	  
+	0.0 0.0 50.0
+MOVIMENT 2
+
+
+
+OBJECT GameObjectEnemy 
+NAME station
+MESH station
+SHADER phong
+TEXTURE station
+POSITION -800.0 500.0 -1500.0
+ROTATION 0.0 0.0 0.0
+SCALE 0.5 0.5 0.5
+WAYPOINTS 3		
+	50.0 0.0 0.0 	
+	100.0 0.0 0.0 	  
+	0.0 0.0 50.0
+MOVIMENT 2
+
+OBJECT GameObjectEnemy 
+NAME station
+MESH station
+SHADER phong
+TEXTURE station
+POSITION -2000.0 500.0 2000.0
+ROTATION 0.0 0.0 0.0
+SCALE 0.5 0.5 0.5
+WAYPOINTS 3		
+	50.0 0.0 0.0 	
+	100.0 0.0 0.0 	  
+	0.0 0.0 50.0
+MOVIMENT 2
+
+
+
+OBJECT GameObjectEnemy 
+NAME station
+MESH station
+SHADER phong
+TEXTURE station
+POSITION -2000.0 500.0 2000.0
+ROTATION 0.0 0.0 0.0
+SCALE 0.5 0.5 0.5
+WAYPOINTS 3		
+	50.0 0.0 0.0 	
+	100.0 0.0 0.0 	  
+	0.0 0.0 50.0
+MOVIMENT 2
+
+
+
+
+OBJECT GameObjectEnemy 
+NAME hunter
+MESH hunter
+SHADER phong
+TEXTURE hunter
+POSITION 50.0 50.0 50.0
+ROTATION 0.0 0.0 0.0
+SCALE 2.0 2.0 2.0
+WAYPOINTS 3		
+	500.0 500.0 -500.0	
+	500.0 -500.0 -500.0 	  
+	-500.0 -500.0 -500.0
+MOVIMENT 1
+
+
+
+OBJECT GameObjectEnemy 
+NAME hunter
+MESH hunter
+SHADER phong
+TEXTURE hunter
+POSITION 150.0 -550.0 350.0
+ROTATION 0.0 0.0 0.0
+SCALE 2.0 2.0 2.0
+WAYPOINTS 3		
+	150.0 -550.0 350.0	
+	-150.0 -550.0 -350.0	  
+	-150.0 550.0 -350.0
+MOVIMENT 1
+
+
+OBJECT GameObjectEnvironment
+NAME sky
+MESH sky
+SHADER environment
+TEXTURE sky
+POSITION 0.0 0.0 -50.0
+ROTATION 0.0 0.0 0.0
+SCALE 1.0 1.0 1.0
